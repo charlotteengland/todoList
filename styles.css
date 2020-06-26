@@ -54,4 +54,10 @@ body {
 
 .done {
   text-decoration: line-through;
+  color: #;
 }
+
+.delete {
+  margin-left: 50px
+}
+
