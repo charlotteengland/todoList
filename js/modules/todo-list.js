@@ -1,7 +1,16 @@
+const TodoList (_ => {
+
+const init = _ => {
+  addListItem();
+  toggleDone();
+  deleteItem();
+}
+
+
+//cache the dom
 const todoInputEL = document.querySelector(".todo__input");
 const todoListEL = document.querySelector(".todo__list");
 const todoItemEls = document.querySelectorAll(".todo__item");
-//const todoItemEls = document.querySelectorAll(".todo__item");
 const deleteButton = document.querySelector(".delete");
 
 function addListItem() {
@@ -63,9 +72,9 @@ function deleteItem() {
   })
 }
 
-addListItem();
-toggleDone();
-deleteItem();
+return {
+  init;
+}
 
 // function toggleDone () {
 //   for (let elem of todoItemEls){
@@ -74,3 +83,7 @@ deleteItem();
 //     })
 //   }
 // }
+}) ();
+
+export default TodoList();
+
