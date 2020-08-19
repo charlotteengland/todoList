@@ -4,6 +4,8 @@ const TodoList = (_ => {
     addListItem();
     toggleDone();
     deleteItem();
+    createListItem();
+    deleteItem();
   }
 
 
@@ -34,7 +36,7 @@ const TodoList = (_ => {
   }
 
 
-  // create function to remove element
+
 
   function createListItem(text) {
     const newListElement  = document.createElement("li");
@@ -85,5 +87,5 @@ const TodoList = (_ => {
   // }
 }) ();
 
-export default TodoList();
+export default TodoList;
 
